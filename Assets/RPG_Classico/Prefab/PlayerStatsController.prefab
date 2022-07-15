@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8671333215705975419}
-  - component: {fileID: 140171825608009482}
+  - component: {fileID: 8856838500307416420}
   m_Layer: 0
-  m_Name: LevelController
+  m_Name: PlayerStatsController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32,7 +32,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &140171825608009482
+--- !u!114 &8856838500307416420
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,6 +41,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 3889132112215934996}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b146ec89ba2a0fa4c8911fbd6d62518e, type: 3}
+  m_Script: {fileID: 11500000, guid: 4a455c4ee4efefa4e86e9e9a24a63f7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xpMultiply: 1
+  xpFirstLevel: 100
+  difficultFactor: 1.5
