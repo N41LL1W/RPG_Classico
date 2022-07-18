@@ -60,6 +60,25 @@ public class PlayerStatsController : MonoBehaviour
         return PlayerStatsController.intance.xpFirstLevel*(GetCurrentLevel()+1)*PlayerStatsController.intance.difficultFactor;
     }
 
+    public static TypeCharacter GetTypeCharacter()
+    {
+        int typeId = PlayerPrefs.GetInt("TypeCharacter");
+
+        if(typeId == 0)
+            return TypeCharacter.Warrior;
+        else if(typeId == 1)
+            return TypeCharacter.Wizard;
+        else if(typeId == 2)
+            return TypeCharacter.Archer;
+
+        return TypeCharacter.Warrior;
+    }
+
+    public static void SetTypeCharacter(TypeCharacter newType)
+    {
+        PlayerPrefs.SetInt("TypeCharacter", (int) newType);
+    }
+
     void OnGUI()
     {
         GUI.Label(new Rect(0, 0, 200, 50), "Current Xp = " + GetCurrentXp());
