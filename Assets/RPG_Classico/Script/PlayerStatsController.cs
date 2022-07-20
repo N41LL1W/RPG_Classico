@@ -1,4 +1,14 @@
+using System.Security.AccessControl;
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+
+[System.Serializable]
+public class BaseInfoChar
+{
+    public BasicStats baseInfo;
+    public TypeCharacter type;
+}
 
 public class PlayerStatsController : MonoBehaviour
 {
@@ -7,6 +17,7 @@ public class PlayerStatsController : MonoBehaviour
     public int xpMultiply = 1;
     public float xpFirstLevel = 100;
     public float difficultFactor = 1.5f;
+    public List<BasicStats> baseInfoChars;
 
     // Start is called before the first frame update
     void Start()
