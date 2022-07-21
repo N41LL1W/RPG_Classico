@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -177,38 +177,6 @@ PrefabInstance:
     - target: {fileID: 8671333215705975419, guid: d8ce6bd63711d2948ad64336a0340b3d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8856838500307416420, guid: d8ce6bd63711d2948ad64336a0340b3d, type: 3}
-      propertyPath: baseInfoChars.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8856838500307416420, guid: d8ce6bd63711d2948ad64336a0340b3d, type: 3}
-      propertyPath: baseInfoChars.Array.data[0].agility
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 8856838500307416420, guid: d8ce6bd63711d2948ad64336a0340b3d, type: 3}
-      propertyPath: baseInfoChars.Array.data[0].stranght
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 8856838500307416420, guid: d8ce6bd63711d2948ad64336a0340b3d, type: 3}
-      propertyPath: baseInfoChars.Array.data[0].startLife
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 8856838500307416420, guid: d8ce6bd63711d2948ad64336a0340b3d, type: 3}
-      propertyPath: baseInfoChars.Array.data[0].startMana
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 8856838500307416420, guid: d8ce6bd63711d2948ad64336a0340b3d, type: 3}
-      propertyPath: baseInfoChars.Array.data[0].baseAttack
-      value: 35
-      objectReference: {fileID: 0}
-    - target: {fileID: 8856838500307416420, guid: d8ce6bd63711d2948ad64336a0340b3d, type: 3}
-      propertyPath: baseInfoChars.Array.data[0].baseDefense
-      value: 45
-      objectReference: {fileID: 0}
-    - target: {fileID: 8856838500307416420, guid: d8ce6bd63711d2948ad64336a0340b3d, type: 3}
-      propertyPath: baseInfoChars.Array.data[0].inteligence
-      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8ce6bd63711d2948ad64336a0340b3d, type: 3}

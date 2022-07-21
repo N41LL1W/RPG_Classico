@@ -3,17 +3,17 @@ using System.Collections;
 using UnityEngine;
 
 [System.Serializable]
-    public class BasicStats
-    {
-        [Header("Status Base")]
-        public float startLife;
-        public float startMana;
-        public int stranght;
-        public int inteligence;
-        public int agility;
-        public int baseDefense;
-        public int baseAttack;
-    }
+public class BasicStats
+{
+    [Header("Status Base")]
+    public float startLife;
+    public float startMana;
+    public int stranght;
+    public int inteligence;
+    public int agility;
+    public int baseDefense;
+    public int baseAttack;
+}
 
 public abstract class CharacterBase : MonoBehaviour
 {

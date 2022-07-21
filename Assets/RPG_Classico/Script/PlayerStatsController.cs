@@ -1,13 +1,12 @@
-using System.Security.AccessControl;
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
 [System.Serializable]
-public class BaseInfoChar
+public class BasicInfoChar
 {
     public BasicStats baseInfo;
-    public TypeCharacter type;
+    public TypeCharacter typeChar;
 }
 
 public class PlayerStatsController : MonoBehaviour
@@ -17,7 +16,7 @@ public class PlayerStatsController : MonoBehaviour
     public int xpMultiply = 1;
     public float xpFirstLevel = 100;
     public float difficultFactor = 1.5f;
-    public List<BasicStats> baseInfoChars;
+    public List<BasicInfoChar> baseInfoChars;
 
     // Start is called before the first frame update
     void Start()
@@ -88,6 +87,16 @@ public class PlayerStatsController : MonoBehaviour
     public static void SetTypeCharacter(TypeCharacter newType)
     {
         PlayerPrefs.SetInt("TypeCharacter", (int) newType);
+    }
+
+    public BasicStats GetBasicStats(TypeCharacter type)
+    {
+        foreach(BasicInfoChar info in baseInfoChars)
+        {
+            if(info.typeChar == type)
+                return info.baseInfo;
+        }
+        return baseInfoChars[0].baseInfo;
     }
 
     void OnGUI()
